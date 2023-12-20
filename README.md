@@ -6,7 +6,6 @@
 
   - [Intro](#intro)
   - [Launch Instructions](#Launch)
-  - 
   - [Changelog](#changelog)
 
 ## <a name="Intro"></a>Intro
