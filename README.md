@@ -11,7 +11,8 @@
 ## <a name="Intro"></a>Intro
 
 
-## <a name="Launch"></a>Media
+## <a name="Launch"></a>Launch Instructions
+
 
 ## <a name="Changelog"></a>Changelog
 
