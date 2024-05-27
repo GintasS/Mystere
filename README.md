@@ -8,7 +8,7 @@
   - [Features](#features)
   - [Technologies](#technologies)
   - [Planned Features](#PlannedFeatures)
-  - [A* Pathfinding Algorithm](#APathfindingAlgorithm)
+  - [A* Search Algorithm](#ASearchAlgorithm)
   - [Round System](#RoundSystem)
   - [Media](#media)
 
@@ -58,9 +58,24 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
 </ul>
 
 
-## <a name="APathfindingAlgorithm"></a>A* Pathfinding Algorithm
+## <a name="ASearchAlgorithm"></a>A* Search Algorithm
 
+Enemies must have the ability to navigate the level intelligently. To add to that, the enemy must find its way to the player to attack it. For this, we are using the A* pathfinding library. The library [4] implements the A* search algorithm as well as adding numerous customizable options, such as multithreading, logging, and color options for artifacts.
 
+A* is a search algorithm applied to pathfinding and graph traversal problems. In a graph data structure, it determines the shortest path between a start node and a goal node. A* determines the priority of exploration, using the cost to reach a node (g-value) and an estimate of the cost to reach the goal from that node (h-value). With a priority queue, the algorithm starts by exploring nodes with the lowest total cost and updates costs and pathways along the way.
+
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/a_desc.png">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/a_desc.png" height="400" style="max-width:100%;"></img>
+</a>
+<blockquote>A* Search Algorithm.</blockquote>
+
+### The Process of Adding A* to Mystere
+
+The steps I took in order to integrate A* into the Mystere game were:
+
+1. **Building the Whole Level:** That means manually dragging 3D objects into the scene, such as cars, buildings, and props.
+2. **Marking the 3D Objects:** Identifying walkable and non-walkable objects using Unity's Layer system. A 2D plane that serves as the "ground" object is located beneath the map. This enables A*, which knows where in the 3D world, to generate the graph model with walkable and unwalkable tiles. The 2D plane makes up the graph model itself. As demonstrated in Figure 11, higher surfaces do not present any issues in spite of this.
+3. **Adding A Classes to the Enemy Objects:** Using `Seeker`, `AIPath` that are responsible for moving the enemy, as well as guiding it to the player.
 
 ## <a name="RoundSystem"></a>Round System
 
