@@ -30,6 +30,7 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
   <li><b>Zombie Stuck System:</b> this prevents a zombie from being stuck right at his spawn point, so a player would not wander around looking for it or restart the game.</li>
   <li><b>Story:</b>The game has implemented a storyline through the dialogue system.</li> 
   <li><b>Multiple weapons:</b> you can select from 6 different weapons, full with sounds and different characteristics: range, damage dealt, ammunition and etc.</li> 
+  <li><b>Enemy types:</b> In total, there are 4 enemy types: zombie, dog, insectoid, monster-scavenger.</li>
 </ul>
 
 ## <a name="Technologies"></a>Technologies 
@@ -116,3 +117,27 @@ Resets the variables used in the previous round.
   <img src="https://github.com/GintasS/Mystere/blob/main/Images/audio_sources_map.png" height="400" style="max-width:100%;"></img>
 </a>
 <blockquote>Audio sources in the game (top view).</blockquote>
+
+<br>
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/zombie_attack_circle_top2.png">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/zombie_attack_circle_top2.png" height="400" style="max-width:100%;"></img>
+</a>
+<blockquote>A visual showing the attack distance of the Zombie enemy class.</blockquote>
+
+<br>
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/spawn_points.png">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/spawn_points.png" height="400" style="max-width:100%;"></img>
+</a>
+<blockquote>The location of all enemy spawn points.</blockquote>
+
+<br>
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/appendix_img_4.png">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/appendix_img_4.png" height="400" style="max-width:100%;"></img>
+</a>
+<blockquote>The implemenetation of the story mode (thanks to Dialogue System).</blockquote>
+
+<br>
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/shop_collider.PNG">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/shop_collider.PNG" height="400" style="max-width:100%;"></img>
+</a>
+<blockquote>Shop system.</blockquote>
