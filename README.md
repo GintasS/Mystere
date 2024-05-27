@@ -30,7 +30,7 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
   <li><b>Round System:</b> Mystere features a round system: every round you get a random number of zombies, and you must kill them to proceed to the next round.</li>
   <li><b>Shop System:</b> You can buy various items, from ammo to utilities, that will help you survive!</li>
   <li><b>Zombie Stuck System:</b> this prevents a zombie from being stuck right at his spawn point, so a player would not wander around looking for it or restart the game.</li>
-  <li><b>Story</b>The game has implemented a storyline through the dialogue system.</li> 
+  <li><b>Story:</b>The game has implemented a storyline through the dialogue system.</li> 
 </ul>
 
 ## <a name="PlannedFeatures"></a>Planned Features
