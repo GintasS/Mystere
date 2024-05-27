@@ -8,11 +8,8 @@
   - [Features](#features)
   - [Technologies](#technologies)
   - [Planned Features](#PlannedFeatures)
-  - [Third-party Assets](#ThirdPartyAssets)
   - [Round System](#RoundSystem)
-  - [Economy Overview](#EconomyOverview)
   - [Media](#media)
-  - [Changelog](#changelog)
 
 ## <a name="Intro"></a>Intro
 
@@ -35,7 +32,7 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
   <li><b>Multiple weapons:</b> you can select from 6 different weapons, full with sounds and different characteristics: range, damage dealt, ammunition and etc.</li> 
 </ul>
 
-## <a name="Technologies"></a>Main Technologies 
+## <a name="Technologies"></a>Technologies 
 
 | Technology Stack | Description |
 | ---------------- | ----------- |
