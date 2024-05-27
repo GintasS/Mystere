@@ -8,6 +8,7 @@
   - [Features](#features)
   - [Technologies](#technologies)
   - [Planned Features](#PlannedFeatures)
+  - [A* Pathfinding Algorithm](#APathfindingAlgorithm)
   - [Round System](#RoundSystem)
   - [Media](#media)
 
@@ -46,25 +47,6 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
 | **Direct X** | To simulate physics, such as raycasts or friction, Direct X was chosen. |
 | **Local Registry** | To store information across game sessions, I utilized the computer's local registry by accessing it through the PlayerPrefs mechanism in Unity. |
 
-## <a name="ClassDiagram"></a>Class Diagram
-
-Some view into the class structure of the Game.
-
-<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/ClassDiagram2.jpg">
-  <img src="https://github.com/GintasS/Mystere/blob/main/Images/ClassDiagram2.PNG" height="400" style="max-width:100%;"></img>
-</a>
-<blockquote>Class structure</blockquote>
-
-
-## High Definition Render Pipeline (HDRP)
-
-The High Definition Render Pipeline (HDRP) [9] technology is an innovative approach in the realm of graphics and visual fidelity within Unity game development. Serving as an advanced rendering framework, HDRP allows game creators to push what’s possible when it comes to realism and visual richness.
-
-At its core, HDRP embraces physically-based rendering (PBR), a cutting-edge strategy that ensures things in the virtual world behave authentically, mimicking the way light interacts with them in reality. This results in surfaces that gleam realistically like metal, feel tactilely like wood, and respond dynamically to environmental lighting.
-
-In essence, HDRP is a comprehensive toolkit for those seeking to push the boundaries of visual excellence in Unity game development. By seamlessly integrating high-definition textures, advanced lighting techniques, and an array of visual effects, HDRP opens a gateway to creating immersive, lifelike worlds that captivate players and bring virtual environments closer to reality than ever before.
-
-
 ## <a name="PlannedFeatures"></a>Planned Features
 <p>This is a list of features that I planned to implement, but due to various factors, such as time, I could not.</p>
 <ul>
@@ -74,6 +56,11 @@ In essence, HDRP is a comprehensive toolkit for those seeking to push the bounda
   <li>Killstreak/scorestreak system</li>
   <li>Different types of zombies</li>
 </ul>
+
+
+## <a name="APathfindingAlgorithm"></a>A* Pathfinding Algorithm
+
+
 
 ## <a name="RoundSystem"></a>Round System
 
@@ -113,6 +100,17 @@ Resets the variables used in the previous round.
 <blockquote>Left image: game view. Right Image: how the camera is represented in the 3D world.</blockquote>
 
 <br>
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/appendix_img_4.png">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/appendix_img_4.png" height="400" style="max-width:100%;"></img>
+</a>
+<blockquote>The implemenetation of the story mode (thanks to Dialogue System).</blockquote>
+
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/ClassDiagram2.jpg">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/ClassDiagram2.PNG" height="400" style="max-width:100%;"></img>
+</a>
+<blockquote>Class structure</blockquote>
+
+<br>
 <a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/audio_sources_map.png">
   <img src="https://github.com/GintasS/Mystere/blob/main/Images/audio_sources_map.png" height="400" style="max-width:100%;"></img>
 </a>
@@ -129,12 +127,6 @@ Resets the variables used in the previous round.
   <img src="https://github.com/GintasS/Mystere/blob/main/Images/spawn_points.png" height="400" style="max-width:100%;"></img>
 </a>
 <blockquote>The location of all enemy spawn points.</blockquote>
-
-<br>
-<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/appendix_img_4.png">
-  <img src="https://github.com/GintasS/Mystere/blob/main/Images/appendix_img_4.png" height="400" style="max-width:100%;"></img>
-</a>
-<blockquote>The implemenetation of the story mode (thanks to Dialogue System).</blockquote>
 
 <br>
 <a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/shop_collider.PNG">
