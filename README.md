@@ -6,6 +6,7 @@
 
   - [Intro](#intro)
   - [Features](#features)
+  - [Technologies](#technologies)
   - [Planned Features](#PlannedFeatures)
   - [Third-party Assets](#ThirdPartyAssets)
   - [Round System](#RoundSystem)
@@ -34,6 +35,38 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
   <li><b>Multiple weapons:</b> you can select from 6 different weapons, full with sounds and different characteristics: range, damage dealt, ammunition and etc.</li> 
 </ul>
 
+## <a name="Technologies"></a>Main Technologies 
+
+| Technology Stack | Description |
+| ---------------- | ----------- |
+| **C#/.NET** | Interacting with Unity's Scripting API is done using the C# programming language. |
+| **Unity** | The entire implementation is carried out with the widely-used game engine Unity, which facilitates the manipulation of code, 3D assets, sounds, animations, and particle effects. |
+| **A Pathfinding Project** | In order to fully integrate the A* search algorithm, the A* Pathfinding library was used. |
+| **Unity Libraries** | Multiple Unity assets were utilized. <br> - FirstPersonCharacter: for controlling the player movement. <br> - MonsterLove.StateMachine: to manage all the different states for the enemies. <br> - Dialogue System: integrating dialogue sequences and searchable objects. |
+| **GitHub** | Due to my extensive familiarity with the GitHub system, it was chosen for version control. |
+| **The High Definition Render Pipeline (HDRP)** | For a better user experience, and to make the whole experience immersive, as well as to try a new approach to building Unity games, I’ve used HDRP for rendering graphics. |
+| **Direct X** | To simulate physics, such as raycasts or friction, Direct X was chosen. |
+| **Local Registry** | To store information across game sessions, I utilized the computer's local registry by accessing it through the PlayerPrefs mechanism in Unity. |
+
+## <a name="ClassDiagram"></a>Class Diagram
+
+Some view into the class structure of the Game.
+
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/ClassDiagram2.jpg">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/ClassDiagram2.PNG" height="400" style="max-width:100%;"></img>
+</a>
+<blockquote>Class structure</blockquote>
+
+
+## High Definition Render Pipeline (HDRP)
+
+The High Definition Render Pipeline (HDRP) [9] technology is an innovative approach in the realm of graphics and visual fidelity within Unity game development. Serving as an advanced rendering framework, HDRP allows game creators to push what’s possible when it comes to realism and visual richness.
+
+At its core, HDRP embraces physically-based rendering (PBR), a cutting-edge strategy that ensures things in the virtual world behave authentically, mimicking the way light interacts with them in reality. This results in surfaces that gleam realistically like metal, feel tactilely like wood, and respond dynamically to environmental lighting.
+
+In essence, HDRP is a comprehensive toolkit for those seeking to push the boundaries of visual excellence in Unity game development. By seamlessly integrating high-definition textures, advanced lighting techniques, and an array of visual effects, HDRP opens a gateway to creating immersive, lifelike worlds that captivate players and bring virtual environments closer to reality than ever before.
+
+
 ## <a name="PlannedFeatures"></a>Planned Features
 <p>This is a list of features that I planned to implement, but due to various factors, such as time, I could not.</p>
 <ul>
@@ -45,112 +78,44 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
 </ul>
 
 ## <a name="RoundSystem"></a>Round System
-<p>Before every round, the round system generates a random number between increasing min and max ranges.<br>
-That number is going to be total zombies that will spawn for that particular round.<br><br>
-E.g. for round number 1, you can expect between 5 and 10 zombies.<br>
-    For round number 10, you can expect between 23 and 55 zombies.
-</p>
 
-<a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Graph2.JPG">
-  <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Graph2.JPG" height="300" style="max-width:100%;"></img>
-</a>
+The round `ZombieRoundHandler` is the central component of the game. The circular system is precisely what its name suggests. Similar to boxing, in this game, the player battles an ever-increasing number of opponents. The idea behind this is to push the player by making the game harder. The least and most foes that can be present in a round are both limited. The round ends when the player eliminates every enemy, and a grace period begins. We use a state system that `MonsterLove` provided. Players use the 30-second grace period to reload on supplies, including ammunition. A new round begins at that point, and new enemies begin to appear. The order of states is this: first, `Round_Start` gets executed, ending with the `Round_End`. Each of those has substates, like `Enter`, `Update` or `Exit`, indicating the start, continuous, and ending phases of these states.
 
-## <a name="EconomyOverview"></a>Economy Overview
-<p>This game has currency to buy items at the shop.<br>
-  You gain 200 credits for every zombie killed. Later you can increase this amount by purchasing a special utility item.<br>
- 
- <p>Available items:</p>
- <table style="width:30%">
-  <tr>
-    <th>Item Name</th>
-    <th>Item Cost</th>
-    <th>Item Description</th>
-  </tr>
-  <tr>
-    <td>1 Ammo Clip (Assault Rifle)</td>
-    <td>500</td>
-    <td>Single juicy ammo clip for your assault rifle needs!</td>
-  </tr>
-  <tr>
-    <td>3 Ammo Clips (Assault Rifle)</td>
-    <td>1400</td>
-    <td>Three is better than one. Use your assault rifle and kill' them!</td>
-  </tr>
-  <tr>
-    <td>5 Ammo Clips (Assault Rifle)</td>
-    <td>2700</td>
-    <td>Ultimate ammo box for your assault rifle.</td>
-  </tr>
-  <tr>
-    <td>1 Ammo Clip (Pistol)</td>
-    <td>200</td>
-    <td>The old and lonely single ammo clip for your pistol.</td>
-  </tr>
-  <tr>
-    <td>3 Ammo Clips (Pistol)</td>
-    <td>800</td>
-    <td>The best bang for the buck! Buy it now white it lasts!</td>
-  </tr>
-  <tr>
-    <td>5 Ammo Clips (Pistol)</td>
-    <td>1400</td>
-    <td>You will kill all the zombies with this bag of 5 ammo clips for your pistol.</td>
-  </tr>
-  <tr>
-    <td><b>Shop Radar</b></td>
-    <td><b>0</b></td>
-    <td>Displays a distance to the nearest shop. <b>Yay, you already have it!</b></td>
-  </tr>
-  <tr>
-    <td>Zombie Counter</td>
-    <td>10000</td>
-    <td>Allows you to see how many zombies are currently alive in this round.</td>
-  </tr>
-  <tr>
-    <td>Scrooge McDuck</td>
-    <td>14200</td>
-    <td>Increases the money given per every zombie killed.</td>
-  </tr>
-  <tr>
-    <td>Health Regeneration</td>
-    <td>18900</td>
-    <td>Makes a player nearly invincible(sort of). Regenerate health every X seconds.</td>
-  </tr>   
-</table>
+### Round_Start_Enter
+It serves as the circular system's cornerstone. In this condition, everything is calculated. What is the anticipated number of enemies and their composition? It will launch the enemy spawning process to introduce adversaries into the game after all of these computations.
 
-<p><center><b>Zombie kills needed to buy a specific item</b></center></p>
+### Round_Start_Update
+When the round is over, this status is checked. Only when no opponents are actively spawning and every enemy is killed will the round come to a conclusion.
 
-<a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Graph4.JPG">
-  <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Graph4.JPG" height="300" style="max-width:100%;"></img>
-</a>
+### Round_End_Enter
+This state determines the grace period between rounds. The countdown from 30 to 0 is started, giving the player time to be ready for the following round. It also saves data and adds money for every enemy that is eliminated.
+
+### Round_End_Exit
+Resets the variables used in the previous round.
 
 ## <a name="Media"></a>Media
-<p><b>YouTube demo:</b></p>
+<p><b>YouTube demo:</b> <a target="_blank" href="https://youtu.be/0TN0fK5Wr5g">Demo</a><br></p>
 
-<a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%201.jpg">
-  <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%201.jpg" height="300" style="max-width:100%;"></img>
-</a>
-<blockquote>Looking into a door</blockquote>
-<br>
-<a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%202.jpg">
-  <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%202.jpg" height="300" style="max-width:100%;"></img>
+
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/zombie.png">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/zombie.png" height="400" style="max-width:100%;"></img>
 </a>
 <blockquote>Spotted a zombie</blockquote>
+<br>
+
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/player_full_health.png">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/player_full_health.png" height="400" style="max-width:100%;"></img>
+</a>
+<blockquote>Exploring the map.</blockquote>
 
 <br>
-<a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%203.jpg">
-  <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%203.jpg" height="300" style="max-width:100%;"></img>
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/player_camera.png">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/player_camera.png" height="400" style="max-width:100%;"></img>
 </a>
-<blockquote>Shooting a zombie</blockquote>
+<blockquote>Left image: game view. Right Image: how the camera is represented in the 3D world.</blockquote>
 
 <br>
-<a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%204.jpg">
-  <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%204.jpg" height="300" style="max-width:100%;"></img>
+<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/audio_sources_map.png">
+  <img src="https://github.com/GintasS/Mystere/blob/main/Images/audio_sources_map.png" height="400" style="max-width:100%;"></img>
 </a>
-<blockquote>Shop Menu</blockquote>
-
-<br>
-<a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%205.jpg">
-  <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%205.jpg" height="300" style="max-width:100%;"></img>
-</a>
-<blockquote>Pistol</blockquote>
+<blockquote>Audio sources in the game (top view).</blockquote>
