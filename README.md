@@ -20,18 +20,17 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
 </p>
 
 ## <a name="Features"></a>Features
-
 <ul>
-  <li><b>Great graphics:</b> this project was done via HDRP.</li>
-  <li><b>Exploration:</b> this is not a small map by any means, so you could take some time to explore it and feel it!</li>
-  <li><b>Sound:</b> this game has both UI, environment, enemy and player sounds, and more! </li>
-  <li><b>Particle effects:</b> this game features some particle systems, like vent smoke, weapon fire, or fog. </li>
-  <li><b> Animations:</b> both the player and zombies have animations, e.g., attacking, running, or reloading a weapon. </li>
-  <li><b>Multiple Scenes:</b> The game features a few scenes, from the main scene, to the main menu, pause menu, or game over menu. </li>
-  <li><b>Round System:</b> Mystere features a round system: every round you get a random number of zombies, and you must kill them to proceed to the next round. </li>
-  <li><b>Shop System:</b> You can buy various items, from ammo to utilities, that will help you survive! </li>
-  <li><b>Zombie Stuck System:</b> this prevents a zombie from being stuck right at his spawn point, so a player would not wander around looking for it or restart the game. </li>
-  <li><b>Story</b>The game has implemented a storyline through the dialogue system. </li>
+  <li><b>Great graphics:</b> this project was done via HDRP.</li>
+  <li><b>Exploration:</b> this is not a small map by any means, so you could take some time to explore it and feel it!</li>
+  <li><b>Sound:</b> this game has both UI, environment, enemy and player sounds, and more!</li>
+  <li><b>Particle effects:</b> this game features some particle systems, like vent smoke, weapon fire, or fog.</li>
+  <li><b> Animations:</b> both the player and zombies have animations, e.g., attacking, running, or reloading a weapon. </li>
+  <li><b>Multiple Scenes:</b> The game features a few scenes, from the main scene, to the main menu, pause menu, or game over menu. </li>
+  <li><b>Round System:</b> Mystere features a round system: every round you get a random number of zombies, and you must kill them to proceed to the next round.</li>
+  <li><b>Shop System:</b> You can buy various items, from ammo to utilities, that will help you survive!</li>
+  <li><b>Zombie Stuck System:</b> this prevents a zombie from being stuck right at his spawn point, so a player would not wander around looking for it or restart the game.</li>
+  <li><b>Story</b>The game has implemented a storyline through the dialogue system.</li> 
 </ul>
 
 ## <a name="PlannedFeatures"></a>Planned Features
