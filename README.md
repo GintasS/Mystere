@@ -25,12 +25,13 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
   <li><b>Exploration:</b> this is not a small map by any means, so you could take some time to explore it and feel it!</li>
   <li><b>Sound:</b> this game has both UI, environment, enemy and player sounds, and more!</li>
   <li><b>Particle effects:</b> this game features some particle systems, like vent smoke, weapon fire, or fog.</li>
-  <li><b> Animations:</b> both the player and zombies have animations, e.g., attacking, running, or reloading a weapon. </li>
+  <li><b>Animations:</b> both the player and zombies have animations, e.g., attacking, running, or reloading a weapon. </li>
   <li><b>Multiple Scenes:</b> The game features a few scenes, from the main scene, to the main menu, pause menu, or game over menu. </li>
   <li><b>Round System:</b> Mystere features a round system: every round you get a random number of zombies, and you must kill them to proceed to the next round.</li>
   <li><b>Shop System:</b> You can buy various items, from ammo to utilities, that will help you survive!</li>
   <li><b>Zombie Stuck System:</b> this prevents a zombie from being stuck right at his spawn point, so a player would not wander around looking for it or restart the game.</li>
   <li><b>Story:</b>The game has implemented a storyline through the dialogue system.</li> 
+  <li><b>Multiple weapons:</b> you can select from 6 different weapons, full with sounds and different characteristics: range, damage dealt, ammunition and etc.</li> 
 </ul>
 
 ## <a name="PlannedFeatures"></a>Planned Features
@@ -129,27 +130,27 @@ E.g. for round number 1, you can expect between 5 and 10 zombies.<br>
 <a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%201.jpg">
   <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%201.jpg" height="300" style="max-width:100%;"></img>
 </a>
-<blockquote>Looking into a door (3/6/2020)</blockquote>
+<blockquote>Looking into a door</blockquote>
 <br>
 <a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%202.jpg">
   <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%202.jpg" height="300" style="max-width:100%;"></img>
 </a>
-<blockquote>Spotted a zombie (3/6/2020)</blockquote>
+<blockquote>Spotted a zombie</blockquote>
 
 <br>
 <a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%203.jpg">
   <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%203.jpg" height="300" style="max-width:100%;"></img>
 </a>
-<blockquote>Shooting a zombie (3/6/2020)</blockquote>
+<blockquote>Shooting a zombie</blockquote>
 
 <br>
 <a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%204.jpg">
   <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%204.jpg" height="300" style="max-width:100%;"></img>
 </a>
-<blockquote>Shop Menu (3/6/2020)</blockquote>
+<blockquote>Shop Menu</blockquote>
 
 <br>
 <a target="_blank" href="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%205.jpg">
   <img src="https://github.com/GintasS/The-Living-Dead/blob/master/Images/Game%205.jpg" height="300" style="max-width:100%;"></img>
 </a>
-<blockquote>Pistol (3/6/2020)</blockquote>
+<blockquote>Pistol</blockquote>
