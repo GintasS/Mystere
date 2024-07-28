@@ -7,7 +7,6 @@
   - [Intro](#intro)
   - [Features](#features)
   - [Technologies](#technologies)
-  - [Planned Features](#PlannedFeatures)
   - [A* Search Algorithm](#ASearchAlgorithm)
   - [Round System](#RoundSystem)
   - [Media](#media)
@@ -46,17 +45,6 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
 | **The High Definition Render Pipeline (HDRP)** | For a better user experience, and to make the whole experience immersive, as well as to try a new approach to building Unity games, I’ve used HDRP for rendering graphics. |
 | **Direct X** | To simulate physics, such as raycasts or friction, Direct X was chosen. |
 | **Local Registry** | To store information across game sessions, I utilized the computer's local registry by accessing it through the PlayerPrefs mechanism in Unity. |
-
-## <a name="PlannedFeatures"></a>Planned Features
-<p>This is a list of features that I planned to implement, but due to various factors, such as time, I could not.</p>
-<ul>
-  <li>Inventory and Loot system</li>
-  <li>Player throwables(grenades, mines and etc.)</li>
-  <li>Interactable environment</li>
-  <li>Killstreak/scorestreak system</li>
-  <li>Different types of zombies</li>
-</ul>
-
 
 ## <a name="ASearchAlgorithm"></a>A* Search Algorithm
 
