@@ -13,8 +13,8 @@
 
 ## <a name="Intro"></a>Intro
 
-<p>Mystere is a first-person 3D puzzle survival game that integrates detective elements, developed as a final bachelor thesis project. 
-The game aims to blend multiple genres, including first-person shooter, detective, and puzzle elements, into a cohesive and engaging experience.
+<p>Mystere is a first-person 3D puzzle survival game, developed as a final bachelor thesis project. 
+The game aims to blend multiple genres, including first-person shooter and economy into a cohesive and engaging experience.
 </p>
 
 ## <a name="Features"></a>Features
