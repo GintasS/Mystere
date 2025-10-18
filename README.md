@@ -7,8 +7,8 @@
   - [Intro](#intro)
   - [Features](#features)
   - [Technologies](#technologies)
-  - [A* Search Algorithm](#ASearchAlgorithm)
-  - [Round System](#RoundSystem)
+  - [A* Search Algorithm](#algorithm)
+  - [Round System](#rounds)
   - [Media](#media)
 
 ## <a name="Intro"></a>Intro
@@ -45,7 +45,7 @@ The game aims to blend multiple genres, including first-person shooter and econo
 | **Direct X** | To simulate physics, such as raycasts or friction, Direct X was chosen. |
 | **Local Registry** | To store information across game sessions, I utilized the computer's local registry by accessing it through the PlayerPrefs mechanism in Unity. |
 
-## <a name="ASearchAlgorithm"></a>A* Search Algorithm
+## <a name="algorithm"></a>Algorithm
 
 Enemies must have the ability to navigate the level intelligently. To add to that, the enemy must find its way to the player to attack it. For this, we are using the A* pathfinding library. The library [4] implements the A* search algorithm as well as adding numerous customizable options, such as multithreading, logging, and color options for artifacts.
 
@@ -64,7 +64,7 @@ The steps I took in order to integrate A* into the Mystere game were:
 2. **Marking the 3D Objects:** Identifying walkable and non-walkable objects using Unity's Layer system. A 2D plane that serves as the "ground" object is located beneath the map. This enables A*, which knows where in the 3D world, to generate the graph model with walkable and unwalkable tiles. The 2D plane makes up the graph model itself. As demonstrated in Figure 11, higher surfaces do not present any issues in spite of this.
 3. **Adding A Classes to the Enemy Objects:** Using `Seeker`, `AIPath` that are responsible for moving the enemy, as well as guiding it to the player.
 
-## <a name="RoundSystem"></a>Round System
+## <a name="RoundSystem"></a>Rounds
 
 The round `ZombieRoundHandler` is the central component of the game. The circular system is precisely what its name suggests. Similar to boxing, in this game, the player battles an ever-increasing number of opponents. The idea behind this is to push the player by making the game harder. The least and most foes that can be present in a round are both limited. The round ends when the player eliminates every enemy, and a grace period begins. We use a state system that `MonsterLove` provided. Players use the 30-second grace period to reload on supplies, including ammunition. A new round begins at that point, and new enemies begin to appear. The order of states is this: first, `Round_Start` gets executed, ending with the `Round_End`. Each of those has substates, like `Enter`, `Update` or `Exit`, indicating the start, continuous, and ending phases of these states.
 
