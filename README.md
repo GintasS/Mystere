@@ -28,7 +28,6 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
   <li><b>Round System:</b> Mystere features a round system: every round you get a random number of zombies, and you must kill them to proceed to the next round.</li>
   <li><b>Shop System:</b> You can buy various items, from ammo to utilities, that will help you survive!</li>
   <li><b>Zombie Stuck System:</b> this prevents a zombie from being stuck right at his spawn point, so a player would not wander around looking for it or restart the game.</li>
-  <li><b>Story:</b>The game has implemented a storyline through the dialogue system.</li> 
   <li><b>Multiple weapons:</b> you can select from 6 different weapons, full with sounds and different characteristics: range, damage dealt, ammunition and etc.</li> 
   <li><b>Enemy types:</b> In total, there are 4 enemy types: zombie, dog, insectoid, monster-scavenger.</li>
 </ul>
@@ -40,7 +39,7 @@ The game aims to blend multiple genres, including first-person shooter, detectiv
 | **C#/.NET** | Interacting with Unity's Scripting API is done using the C# programming language. |
 | **Unity** | The entire implementation is carried out with the widely-used game engine Unity, which facilitates the manipulation of code, 3D assets, sounds, animations, and particle effects. |
 | **A Pathfinding Project** | In order to fully integrate the A* search algorithm, the A* Pathfinding library was used. |
-| **Unity Libraries** | Multiple Unity assets were utilized. <br> - FirstPersonCharacter: for controlling the player movement. <br> - MonsterLove.StateMachine: to manage all the different states for the enemies. <br> - Dialogue System: integrating dialogue sequences and searchable objects. |
+| **Unity Libraries** | Multiple Unity assets were utilized. <br> - FirstPersonCharacter: for controlling the player movement. <br> - MonsterLove.StateMachine: to manage all the different states for the enemies.|
 | **GitHub** | Due to my extensive familiarity with the GitHub system, it was chosen for version control. |
 | **The High Definition Render Pipeline (HDRP)** | For a better user experience, and to make the whole experience immersive, as well as to try a new approach to building Unity games, I’ve used HDRP for rendering graphics. |
 | **Direct X** | To simulate physics, such as raycasts or friction, Direct X was chosen. |
@@ -103,11 +102,6 @@ Resets the variables used in the previous round.
 <blockquote>Left image: game view. Right Image: how the camera is represented in the 3D world.</blockquote>
 
 <br>
-<a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/appendix_img_4.png">
-  <img src="https://github.com/GintasS/Mystere/blob/main/Images/appendix_img_4.png" height="400" style="max-width:100%;"></img>
-</a>
-<blockquote>The implemenetation of the story mode (thanks to Dialogue System).</blockquote>
-
 <a target="_blank" href="https://github.com/GintasS/Mystere/blob/master/Images/ClassDiagram2.jpg">
   <img src="https://github.com/GintasS/Mystere/blob/main/Images/ClassDiagram2.PNG" height="400" style="max-width:100%;"></img>
 </a>
